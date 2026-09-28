@@ -132,13 +132,15 @@ Package = vulkan-intel 3:26.2.3-1
 API Version = 1.4.354  
 Driver Name = Intel open-source Mesa driver  
 Driver Info = Mesa 26.2.3-arch3.1  
-  
+
+**SOFTWARE/UTILITY**
+Python Version = Python 3.14.7  
+SPIRV = SPIRV-Tools v2026.3 vulkan-sdk-1.4.357.0-0-g9a49b0883  
+
 **SOFTWARE/VR**:  
 RiftLift Version = riftlift 0.10.2.5  
 WiVRn Version = Version 26.9  
 WayVR Version = 26.8.0  
-Python Version = Python 3.14.7  
-SPIRV = SPIRV-Tools v2026.3 vulkan-sdk-1.4.357.0-0-g9a49b0883  
 Proton Version = GE-Proton11-3  
 DXVK Version = 3.0.2-riftlift.1  
 vkd3d-proton Version = vkd3d-1.1-5438-g3dfc6f07d
