@@ -30,7 +30,7 @@ A1. I just wanna run it!
    Simply running it as is should work!  
    `./echovr-arcpatcher.sh`    
    The terminal output will tell you where things are placed on your system.  
-   The script will try to use `echo-vr` as the game's slug by default. If that slug is not found, it'll attempt to identify a single Echo VR-like entry in your RiftLift game list. If it still can't determine a slug, you can refer to A2 to provide your own slug to the script. 
+   The script will try to use `echo-vr` as the game's slug by default. If that slug is not found, it'll attempt to identify a single Echo VR-like entry in your RiftLift game list. If it still can't determine a slug, you can refer to A2 to provide your own slug to the script.   
 A2. I would like to specify some things  
 	If you're someone who likes to keep things organized your way, you haven't been forgotten!    
 	`./echovr-arcpatcher.sh [slug] [max-launches]`  
