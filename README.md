@@ -142,7 +142,7 @@ WiVRn Version = Version 26.9
 WayVR Version = 26.8.0  
 Proton Version = GE-Proton11-3  
 DXVK Version = 3.0.2-riftlift.1  
-vkd3d-proton Version = vkd3d-1.1-5438-g3dfc6f07d
-
-**The main error from Proton's log**
+vkd3d-proton Version = vkd3d-1.1-5438-g3dfc6f07d 
+  
+**The main error from Proton's log**   
 `d3d12_device_validate_shader_meta: Attempting to use FP64 operations in shader [SHADERHASH], but this is not supported.`
