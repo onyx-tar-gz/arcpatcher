@@ -67,20 +67,20 @@ This is intended. Echo VR compiles shaders *on demand* rather than compiling all
   
 **I am running the script, or will be, what exactly am I expected to do?**  
 Currently, you're expected to just enter areas of the game. Ensure your VR is connected, otherwise Echo VR will purposely fail because it cannot detect a VR session.   
-In my personal testing, you can just sit there for a bit until the Main Menu opens. From there, you're expected to keep clicking the TUTORIAL button every time the game re-opens until that one eventually loads with no crash, After that, you should do the same but for the PLAY button until the Lobby loads with no crash. Arena should load with no issue after this, but Combat requires additional loading until it no longer crashes.  
+In my personal testing, you can just sit there for a bit until the Main Menu finally opens with no crash. From there, I recommend you keep clicking the TUTORIAL button every time the game re-opens until the Tutorial eventually loads with no crash, After that, you should do the same but for the PLAY button until the Lobby loads with no crash. Arena *should* load with no issue after this, but Combat requires additional loading until it no longer crashes. 
   
 **Why do I have to enter the Tutorial, Lobby, Combat Maps, etc.?**  
 Echo VR compiles shaders on demand, ArcPatcher can only patch shaders after the game has already encountered and compiled them. Entering different areas of content in the game causes additional shaders to be compiled, which `vkd3d-proton` then dumps to the configured shader dump directory.
   
-**Does this affect my game files? / Is it changing Echo VR's original game files?**  
-*No*. The shaders are instead overridden using a different folder thanks to `vkd3d-proton`'s `VKD3D_SHADER_OVERRIDE` variable.  
+**Does this affect my actual game files? / Is it changing Echo VR's original game files?**  
+*No*. The shaders are instead overridden using a different folder thanks to `vkd3d-proton`'s `VKD3D_SHADER_OVERRIDE` variable, but the game itself should stay intact.  
   
 **What happens if a shader cannot be patched?**  
 The script refuses to modify shaders when it detects FP64 usage that may be too complicated or unsafe for the patching process. When this happens, the script stops and identifies the shader that needs manual attention.   
 This has not happened during my personal playtesting, but I felt it was a good safeguard to add anyways.
     
 **How do I know when I'm done?**  
-With the way this process is, there's no way for me to tell you where precisely you are done, so this would have to be some testing on your end.  
+With the way this process is, there's no way for me to tell you where precisely you would be done, so this would have to be some testing on your end.  
 If the game can reach areas you previously could not, you're done with those sections. If you can play the game for a solid amount of time with no crashes, it's reasonable to assume you're done patching.   
 However, if you ever encounter a crash, you can always just run the script again! The shaders that are already patched will remain patched.  
   
@@ -99,7 +99,7 @@ Even though the amount of shaders probably exceeds 25, I set it to 25 as a safet
 If ArcPatcher reaches the specified launch limit, *nothing is lost* and you can simply run it again to resume.
 
 **Does this have any downsides?**  
-I haven't noticed any issues regarding graphics and gameplay. Just don't expect amazing performance if you have a lower-end Arc card like me, Echo VR itself is demanding. (This is not an issue with the patcher to my knowledge, this is just a skill issue on my hardware specs!!!)  
+I haven't noticed any issues regarding graphics and gameplay. Just don't expect amazing performance if you have a lower-end Arc card like me, Echo VR itself is demanding like most VR titles. (This is not an issue with the patcher to my knowledge, this is just a skill issue on my hardware specs!!!)  
 There's also the obvious downside that *this is not officially supported by Echo VR*! As you should with anything unofficial, expect potential unexpected behaviour.
 
 **Does this support Windows?**  
@@ -112,7 +112,7 @@ There's also the obvious downside that *this is not officially supported by Echo
 ***
   **Other Info**    
   
-#  **My Tested Environment**
+#  **My Test Environment**
     
 **HARDWARE**:  
 GPU = Intel Corporation DG2 [Arc A380]  
